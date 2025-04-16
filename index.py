@@ -1,5 +1,4 @@
-from app import app
+from api.index import handler
 
-# Vercel serverless function handler
-def handler(event, context):
-    return app
+# Re-export the handler function for Vercel
+__all__ = ['handler']

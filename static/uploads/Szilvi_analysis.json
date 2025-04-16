@@ -1,0 +1,634 @@
+{
+  "video_elemzes": {
+    "metadata": {
+      "video_hossz": "0:12",
+      "intervallumok_szama": 4
+    },
+    "intervallumok": [
+      {
+        "idopont": "0:00-0:30",
+        "pszichometria": {
+          "orom": {
+            "ertek": 0.75,
+            "javaslatok": [
+              "A mosoly hiteles, tartsd meg ezt a pozitív kisugárzást.",
+              "Fontold meg a zene hangulatának további erősítését vizuális elemekkel, pl. élénkebb színekkel a végén."
+            ]
+          },
+          "stressz": {
+            "ertek": 0.1,
+            "javaslatok": [
+              "A testbeszéd nyugodt, nincs látható jele stressznek.",
+              "A magabiztos tartás tovább csökkentheti az észlelt stresszt."
+            ]
+          },
+          "unalom": {
+            "ertek": 0.2,
+            "javaslatok": [
+              "A visszaszámlálás és a zene fenntartja az érdeklődést kezdetben.",
+              "A videó rövidsége miatt az unalom nem tud kialakulni, de hosszabb tartalom esetén több vizuális/tartalmi váltásra lenne szükség."
+            ]
+          },
+          "elkotelezettseg": {
+            "ertek": 0.8,
+            "javaslatok": [
+              "A visszaszámláló effekt és a dinamikus zene megragadja a figyelmet.",
+              "A közvetlen szemkontaktus a végén növeli az elköteleződést."
+            ]
+          }
+        },
+        "vizualis_stimulacio": {
+          "intenzitas": {
+            "ertek": 0.7,
+            "javaslatok": [
+              "A visszaszámláló effekt vizuálisan stimuláló.",
+              "A végső kép kevésbé intenzív, lehetne élénkebb háttérrel vagy effektekkel dobni rajta."
+            ]
+          },
+          "mozgas": {
+            "ertek": 0.65,
+            "javaslatok": [
+              "A visszaszámláló effekt és a képi szorzódás (kaleidoszkóp hatás) biztosítja a mozgást.",
+              "Az előadó mozgása minimális, de a vizuális effektek kompenzálják."
+            ]
+          },
+          "kontraszt": {
+            "ertek": 0.6,
+            "javaslatok": [
+              "A visszaszámláló számok jól elkülönülnek a háttértől.",
+              "A végső kép kontrasztja átlagos, lehetne erősebb."
+            ]
+          },
+          "dinamika": {
+            "ertek": 0.85,
+            "javaslatok": [
+              "A gyors visszaszámlálás és a vágások dinamikát adnak.",
+              "A zene tempója is hozzájárul a dinamikus érzethez."
+            ]
+          }
+        },
+        "hang_stimulacio": {
+          "hangero": {
+            "ertek": 0.75,
+            "javaslatok": [
+              "A zene hangereje megfelelő, energikus.",
+              "Figyelj a konzisztens hangerőre a teljes videó alatt (bár itt csak zene van)."
+            ]
+          },
+          "energia": {
+            "ertek": 0.8,
+            "javaslatok": [
+              "A zene energikus, lendületes.",
+              "A zeneválasztás illeszkedik a vizuális dinamikához."
+            ]
+          },
+          "hangmagassag": {
+            "ertek": 0.5,
+            "javaslatok": [
+              "A zene hangmagassága kiegyensúlyozott.",
+              "Nincs beszédhang, így ez a metrika csak a zenére vonatkozik."
+            ]
+          },
+          "tempo": {
+            "ertek": 0.8,
+            "javaslatok": [
+              "A zene tempója gyors, illeszkedik a visszaszámláláshoz.",
+              "A tempó fenntartja a figyelmet."
+            ]
+          }
+        },
+        "kognitiv_tenyezok": {
+          "kognitiv_terheles": {
+            "ertek": 0.25,
+            "javaslatok": [
+              "A tartalom könnyen befogadható (visszaszámlálás, kártya bemutatása).",
+              "A fő üzenet (a kártya) egyértelmű."
+            ]
+          }
+        },
+        "public_speech": {
+          "testbeszed": {
+            "ertek": 0.7,
+            "javaslatok": [
+              "A végső képkockán a testtartás nyitott és magabiztos.",
+              "A kártya tartása stabil, a célzás egyértelmű."
+            ]
+          },
+          "verbalis_kommunikacio": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs verbális kommunikáció a videóban.",
+              "Fontold meg egy rövid szlogen vagy üzenet hozzáadását hangban vagy szövegként."
+            ]
+          },
+          "hitelesseg_es_onbizalom": {
+            "ertek": 0.75,
+            "javaslatok": [
+              "A mosoly és a közvetlen szemkontaktus növeli a hitelességet.",
+              "A magabiztos tartás pozitív benyomást kelt."
+            ]
+          },
+          "kozonsegkapcsolat": {
+            "ertek": 0.6,
+            "javaslatok": [
+              "A szemkontaktus a végén segít a kapcsolatépítésben.",
+              "A visszaszámlálás bevonja a nézőt."
+            ]
+          },
+          "hangszin_es_intonacio": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs beszédhang, így nem értékelhető.",
+              "Ha lenne hang, figyelni kellene a barátságos, megnyerő tónusra."
+            ]
+          },
+          "struktura_es_tortenetmeseles": {
+            "ertek": 0.5,
+            "javaslatok": [
+              "Egyszerű struktúra: bevezetés (visszaszámlálás), bemutatás (kártya).",
+              "Rövid, lényegretörő, de nem nevezhető történetmesélésnek."
+            ]
+          }
+        }
+      },
+      {
+        "idopont": "0:30-1:00",
+        "pszichometria": {
+          "orom": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "stressz": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "unalom": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "elkotelezettseg": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          }
+        },
+        "vizualis_stimulacio": {
+          "intenzitas": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "mozgas": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "kontraszt": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "dinamika": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          }
+        },
+        "hang_stimulacio": {
+          "hangero": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "energia": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "hangmagassag": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "tempo": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          }
+        },
+        "kognitiv_tenyezok": {
+          "kognitiv_terheles": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          }
+        },
+        "public_speech": {
+          "testbeszed": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "verbalis_kommunikacio": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "hitelesseg_es_onbizalom": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "kozonsegkapcsolat": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "hangszin_es_intonacio": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "struktura_es_tortenetmeseles": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          }
+        }
+      },
+      {
+        "idopont": "1:00-1:30",
+        "pszichometria": {
+          "orom": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "stressz": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "unalom": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "elkotelezettseg": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          }
+        },
+        "vizualis_stimulacio": {
+          "intenzitas": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "mozgas": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "kontraszt": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "dinamika": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          }
+        },
+        "hang_stimulacio": {
+          "hangero": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "energia": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "hangmagassag": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "tempo": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          }
+        },
+        "kognitiv_tenyezok": {
+          "kognitiv_terheles": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          }
+        },
+        "public_speech": {
+          "testbeszed": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "verbalis_kommunikacio": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "hitelesseg_es_onbizalom": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "kozonsegkapcsolat": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "hangszin_es_intonacio": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "struktura_es_tortenetmeseles": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          }
+        }
+      },
+      {
+        "idopont": "1:30-2:00",
+        "pszichometria": {
+          "orom": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "stressz": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "unalom": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "elkotelezettseg": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          }
+        },
+        "vizualis_stimulacio": {
+          "intenzitas": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "mozgas": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "kontraszt": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "dinamika": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          }
+        },
+        "hang_stimulacio": {
+          "hangero": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "energia": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "hangmagassag": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "tempo": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          }
+        },
+        "kognitiv_tenyezok": {
+          "kognitiv_terheles": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          }
+        },
+        "public_speech": {
+          "testbeszed": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "verbalis_kommunikacio": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "hitelesseg_es_onbizalom": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "kozonsegkapcsolat": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "hangszin_es_intonacio": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          },
+          "struktura_es_tortenetmeseles": {
+            "ertek": 0.0,
+            "javaslatok": [
+              "Nincs tartalom ebben az intervallumban.",
+              ","
+            ]
+          }
+        }
+      }
+    ],
+    "osszesites": {
+      "atlagok": {
+        "pszichometria": {
+          "orom": 0.1875,
+          "stressz": 0.025,
+          "unalom": 0.05,
+          "elkotelezettseg": 0.2
+        },
+        "vizualis_stimulacio": {
+          "intenzitas": 0.175,
+          "mozgas": 0.1625,
+          "kontraszt": 0.15,
+          "dinamika": 0.2125
+        },
+        "hang_stimulacio": {
+          "hangero": 0.1875,
+          "energia": 0.2,
+          "hangmagassag": 0.125,
+          "tempo": 0.2
+        },
+        "kognitiv_tenyezok": {
+          "kognitiv_terheles": 0.0625
+        },
+        "public_speech": {
+          "testbeszed": 0.175,
+          "verbalis_kommunikacio": 0.0,
+          "hitelesseg_es_onbizalom": 0.1875,
+          "kozonsegkapcsolat": 0.15,
+          "hangszin_es_intonacio": 0.0,
+          "struktura_es_tortenetmeseles": 0.125
+        }
+      },
+      "fo_javaslatok": [
+        "A videó rendkívül rövid, az elemzés főként az első 12 másodpercen alapul; a 2 perces keret nagy része üres.",
+        "A kezdő vizuális és hanghatások (visszaszámlálás, zene) erősek és figyelemfelkeltőek.",
+        "A nonverbális kommunikáció (mosoly, szemkontaktus, testtartás) pozitív és magabiztos.",
+        "Fontold meg verbális elemek (beszéd, szlogen) hozzáadását a kommunikáció erősítésére.",
+        "A videó végi logó/szlogen megjelenítése erősíti a márkaüzenetet, de lehetne dinamikusabb."
+      ]
+    }
+  }
+}

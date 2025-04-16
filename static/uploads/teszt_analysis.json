@@ -1,0 +1,640 @@
+{
+  "video_elemzes": {
+    "metadata": {
+      "video_hossz": "26:08",
+      "intervallumok_szama": 4
+    },
+    "intervallumok": [
+      {
+        "idopont": "0:00-0:30",
+        "pszichometria": {
+          "orom": {
+            "ertek": 0.3,
+            "javaslatok": [
+              "Az intró zene energikus, de az előadás kezdete semleges hangulatú.",
+              "Az előadó mosolyoghatna többet a bevezetőben a pozitívabb hangulatért."
+            ]
+          },
+          "stressz": {
+            "ertek": 0.15,
+            "javaslatok": [
+              "Az előadó nyugodtnak tűnik, de a jegyzetek használata utalhat némi kezdeti feszültségre.",
+              "Lazább testtartás segíthet a stressz további csökkentésében."
+            ]
+          },
+          "unalom": {
+            "ertek": 0.1,
+            "javaslatok": [
+              "Az intró figyelemfelkeltő, a közönség figyel az előadás kezdetén.",
+              "Interaktív elemek bevonása később segíthet fenntartani az érdeklődést."
+            ]
+          },
+          "elkotelezettseg": {
+            "ertek": 0.8,
+            "javaslatok": [
+              "A közönség figyelmesnek tűnik az előadás kezdetén.",
+              "A szemkontaktus fenntartása és a közönség közvetlen megszólítása tovább növelheti az elkötelezettséget."
+            ]
+          }
+        },
+        "vizualis_stimulacio": {
+          "intenzitas": {
+            "ertek": 0.75,
+            "javaslatok": [
+              "Az intró grafikája vizuálisan intenzív, utána a konferenciaterem képe visszafogottabb.",
+              "A slide-ok vizuális elemeinek (pl. képek, diagramok) használata fenntarthatja az intenzitást."
+            ]
+          },
+          "mozgas": {
+            "ertek": 0.6,
+            "javaslatok": [
+              "Az intró animált, utána a kamera mozgása és az előadó minimális mozgása látható.",
+              "Az előadó tudatosabb színpadi mozgása dinamikusabbá teheti a látványt."
+            ]
+          },
+          "kontraszt": {
+            "ertek": 0.8,
+            "javaslatok": [
+              "Az intró sárga-fekete kontrasztja erős, a terem világítása visszafogottabb kontrasztot ad.",
+              "A slide-okon a szöveg és háttér kontrasztjára figyelni kell a jobb olvashatóságért."
+            ]
+          },
+          "dinamika": {
+            "ertek": 0.7,
+            "javaslatok": [
+              "Az intró gyors vágásai dinamikusak, utána a tempó lelassul a közönség és az előadó mutatásával.",
+              "Gyakoribb vágások vagy kameraállás-váltások növelhetik a vizuális dinamikát."
+            ]
+          }
+        },
+        "hang_stimulacio": {
+          "hangero": {
+            "ertek": 0.7,
+            "javaslatok": [
+              "Az intró zene hangos, az előadó hangja tiszta és érthető, megfelelő hangerővel.",
+              "A hangerő konzisztens fenntartása fontos."
+            ]
+          },
+          "energia": {
+            "ertek": 0.65,
+            "javaslatok": [
+              "Az intró zene energikus, az előadó hangja kezdetben nyugodt, informatív.",
+              "A hang energiájának váltakoztatása (pl. hangsúlyozás) fenntarthatja a figyelmet."
+            ]
+          },
+          "hangmagassag": {
+            "ertek": 0.5,
+            "javaslatok": [
+              "Az előadó hangmagassága a normál tartományban van, kiegyensúlyozott.",
+              "A hangmagasság tudatosabb váltakoztatása (intonáció) kifejezőbbé teheti a beszédet."
+            ]
+          },
+          "tempo": {
+            "ertek": 0.6,
+            "javaslatok": [
+              "Az előadó beszédtempója mérsékelt, könnyen követhető.",
+              "A tempó váltakoztatása (pl. fontos pontoknál lassítás) segíthet a hangsúlyozásban."
+            ]
+          }
+        },
+        "kognitiv_tenyezok": {
+          "kognitiv_terheles": {
+            "ertek": 0.4,
+            "javaslatok": [
+              "Az intró után az előadás bevezető információkat tartalmaz, mérsékelt kognitív terhelést jelent.",
+              "Az összetettebb témák bevezetése előtt érdemes egyszerűsíteni vagy vizuális segédeszközt használni."
+            ]
+          }
+        },
+        "public_speech": {
+          "testbeszed": {
+            "ertek": 0.6,
+            "javaslatok": [
+              "Az előadó kezdetben középen áll, minimális gesztikulációval, jegyzeteket tart.",
+              "Nyitottabb testtartás és a jegyzetektől való elszakadás javíthatna a testbeszéden."
+            ]
+          },
+          "verbalis_kommunikacio": {
+            "ertek": 0.85,
+            "javaslatok": [
+              "Tiszta, érthető beszéd, jó artikuláció.",
+              "Nyelvi töltelékszavak kerülésére lehetne figyelni (bár ebben az intervallumban nem feltűnő)."
+            ]
+          },
+          "hitelesseg_es_onbizalom": {
+            "ertek": 0.75,
+            "javaslatok": [
+              "Magabiztos fellépés, de a jegyzetek használata kissé csökkentheti az érzékelt spontaneitást.",
+              "A jegyzetek helyett a diákra vagy támpontokra támaszkodás növelheti a hitelességet."
+            ]
+          },
+          "kozonsegkapcsolat": {
+            "ertek": 0.7,
+            "javaslatok": [
+              "Az előadó megszólítja a közönséget, próbál szemkontaktust teremteni.",
+              "Gyakoribb és célzottabb szemkontaktus erősítheti a kapcsolatot."
+            ]
+          },
+          "hangszin_es_intonacio": {
+            "ertek": 0.65,
+            "javaslatok": [
+              "A hangszín kellemes, az intonáció kezdetben kissé monoton.",
+              "Nagyobb hangszín- és hangmagasság-változatosság élénkebbé tenné az előadást."
+            ]
+          },
+          "struktura_es_tortenetmeseles": {
+            "ertek": 0.7,
+            "javaslatok": [
+              "Világos bevezető, kontextusba helyezi az előadást a korábbiakhoz képest.",
+              "Egy figyelemfelkeltő nyitó gondolat vagy kérdés még erősebbé tehetné a kezdést."
+            ]
+          }
+        }
+      },
+      {
+        "idopont": "0:30-1:00",
+        "pszichometria": {
+          "orom": {
+            "ertek": 0.25,
+            "javaslatok": [
+              "Az előadó hangneme továbbra is inkább informatív, semleges.",
+              "Egy-egy anekdota vagy személyesebb megjegyzés növelhetné a pozitív érzelmeket."
+            ]
+          },
+          "stressz": {
+            "ertek": 0.1,
+            "javaslatok": [
+              "Az előadó továbbra is nyugodtnak hat, láthatóan felkészült.",
+              "A jegyzetek/telefon elhagyása tovább növelné a magabiztosság érzetét."
+            ]
+          },
+          "unalom": {
+            "ertek": 0.15,
+            "javaslatok": [
+              "A korábbi előadások összegzése releváns, de kissé száraz lehet.",
+              "A hallgatóság bevonása kérdéssel vagy gyors felméréssel fenntarthatja az érdeklődést."
+            ]
+          },
+          "elkotelezettseg": {
+            "ertek": 0.75,
+            "javaslatok": [
+              "A közönség figyel, az összefoglaló releváns számukra.",
+              "A slide-ok jobb kihasználása (pl. kulcsszavak kiemelése) segítheti a követést."
+            ]
+          }
+        },
+        "vizualis_stimulacio": {
+          "intenzitas": {
+            "ertek": 0.4,
+            "javaslatok": [
+              "A látvány főként az előadóra és a cím-slide-ra koncentrál.",
+              "Vizuálisan érdekesebb diák használata javíthatna ezen."
+            ]
+          },
+          "mozgas": {
+            "ertek": 0.35,
+            "javaslatok": [
+              "Az előadó minimálisan mozog, gesztikulál.",
+              "Több színpadi mozgás vagy dinamikusabb gesztusok élénkíthetnék a képet."
+            ]
+          },
+          "kontraszt": {
+            "ertek": 0.5,
+            "javaslatok": [
+              "A terem világítása és a slide kontrasztja átlagos.",
+              "Erősebb kontrasztú diák vagy jobb színpadmegvilágítás javíthatna."
+            ]
+          },
+          "dinamika": {
+            "ertek": 0.3,
+            "javaslatok": [
+              "A vizuális elemek kevéssé változnak ebben a szakaszban.",
+              "Rövidebb időközönkénti slide-váltás vagy kameraállás-változás növelhetné a dinamikát."
+            ]
+          }
+        },
+        "hang_stimulacio": {
+          "hangero": {
+            "ertek": 0.7,
+            "javaslatok": [
+              "A hangerő továbbra is megfelelő és konzisztens.",
+              "Mikrofontechnika helyes használatának fenntartása."
+            ]
+          },
+          "energia": {
+            "ertek": 0.6,
+            "javaslatok": [
+              "A hang energiája stabil, informatív.",
+              "A lelkesedés fokozása a hangszínben növelhetné az energia szintjét."
+            ]
+          },
+          "hangmagassag": {
+            "ertek": 0.5,
+            "javaslatok": [
+              "A hangmagasság továbbra is a közép tartományban mozog.",
+              "Tudatosabb intonáció használata a kulcspontok kiemelésére."
+            ]
+          },
+          "tempo": {
+            "ertek": 0.65,
+            "javaslatok": [
+              "A beszédtempó követhető, talán kissé gyorsul az összefoglalás során.",
+              "A tempó tartása, esetleg szünetek beiktatása a gondolatok tagolására."
+            ]
+          }
+        },
+        "kognitiv_tenyezok": {
+          "kognitiv_terheles": {
+            "ertek": 0.55,
+            "javaslatok": [
+              "A több előadásra való hivatkozás és azok összekapcsolása növeli a kognitív terhelést.",
+              "Vizuális segédeszközök (pl. logók, kulcsszavak a slide-on) segíthetnék a megértést."
+            ]
+          }
+        },
+        "public_speech": {
+          "testbeszed": {
+            "ertek": 0.65,
+            "javaslatok": [
+              "Gesztikuláció élénkül, de a jegyzetek/telefon még mindig kézben.",
+              "A kezek szabadabb használata és a testbeszéd tudatosabb alkalmazása."
+            ]
+          },
+          "verbalis_kommunikacio": {
+            "ertek": 0.85,
+            "javaslatok": [
+              "Továbbra is tiszta és érthető beszéd.",
+              "Figyelni a mondatok gördülékenységére az összefoglalás során."
+            ]
+          },
+          "hitelesseg_es_onbizalom": {
+            "ertek": 0.75,
+            "javaslatok": [
+              "A téma ismerete nyilvánvaló, ami növeli a hitelességet.",
+              "A jegyzetektől való függés csökkentése tovább erősítené az önbizalmat."
+            ]
+          },
+          "kozonsegkapcsolat": {
+            "ertek": 0.65,
+            "javaslatok": [
+              "Szemkontaktus próbálkozások, de a jegyzetekre nézés megszakítja.",
+              "A közönség felé fordulás és a szemkontaktus tudatosabb keresése."
+            ]
+          },
+          "hangszin_es_intonacio": {
+            "ertek": 0.6,
+            "javaslatok": [
+              "A hangszín továbbra is kellemes, de az intonáció lehetne változatosabb.",
+              "A hang lejtésének használata a különböző idézett pontok megkülönböztetésére."
+            ]
+          },
+          "struktura_es_tortenetmeseles": {
+            "ertek": 0.75,
+            "javaslatok": [
+              "Logikus szerkezet: a korábbi előadások összegzése és összekapcsolása.",
+              "Egy átvezető mondat használata a saját téma felvezetése előtt javíthatná az áramlást."
+            ]
+          }
+        }
+      },
+      {
+        "idopont": "1:00-1:30",
+        "pszichometria": {
+          "orom": {
+            "ertek": 0.25,
+            "javaslatok": [
+              "Az idézetek ismertetése informatív jellegű.",
+              "Az idézetekhez fűzött személyes kommentár vagy reakció színesíthetné."
+            ]
+          },
+          "stressz": {
+            "ertek": 0.1,
+            "javaslatok": [
+              "Az előadó továbbra is magabiztosnak tűnik a téma ismertetésében.",
+              "A színpadi mozgás magabiztosabbá tétele."
+            ]
+          },
+          "unalom": {
+            "ertek": 0.2,
+            "javaslatok": [
+              "Az idézetek sorolása kissé monotonná válhat.",
+              "Az idézetek vizuális megjelenítése a dián vagy egy releváns kép bemutatása segíthet."
+            ]
+          },
+          "elkotelezettseg": {
+            "ertek": 0.7,
+            "javaslatok": [
+              "A közönség valószínűleg követi az összefoglalást, de az aktivitás csökkenhet.",
+              "Egy retorikai kérdés feltevése az idézetek kapcsán bevonhatná a hallgatóságot."
+            ]
+          }
+        },
+        "vizualis_stimulacio": {
+          "intenzitas": {
+            "ertek": 0.35,
+            "javaslatok": [
+              "A kép továbbra is az előadóra és a statikus slide-ra fókuszál.",
+              "Dinamikusabb slide-ok vagy a közönség reakcióinak bevágása növelhetné az intenzitást."
+            ]
+          },
+          "mozgas": {
+            "ertek": 0.4,
+            "javaslatok": [
+              "Az előadó gesztikulációja aktívabb, a színpadon mozog kissé.",
+              "A mozgás tudatosabb használata a térben."
+            ]
+          },
+          "kontraszt": {
+            "ertek": 0.5,
+            "javaslatok": [
+              "A vizuális kontraszt nem változik jelentősen.",
+              "A slide-ok tervezésénél erősebb kontrasztok alkalmazása."
+            ]
+          },
+          "dinamika": {
+            "ertek": 0.35,
+            "javaslatok": [
+              "A vizuális dinamika alacsony marad.",
+              "Rövid videóbejátszás vagy animált grafika beillesztése megtörheti a monotonitást."
+            ]
+          }
+        },
+        "hang_stimulacio": {
+          "hangero": {
+            "ertek": 0.7,
+            "javaslatok": [
+              "A hangerő stabil, jól hallható.",
+              "A terem akusztikájának megfelelő mikrofonhasználat fenntartása."
+            ]
+          },
+          "energia": {
+            "ertek": 0.6,
+            "javaslatok": [
+              "Az energia szintje konstans.",
+              "Az \"ijesztő\" vagy \"heroikus\" szavaknál erőteljesebb hangsúlyozás növelhetné az energiát."
+            ]
+          },
+          "hangmagassag": {
+            "ertek": 0.55,
+            "javaslatok": [
+              "Az intonáció kissé változatosabb az idézeteknél.",
+              "Az érzelmek kifejezése a hangmagasság változtatásával (pl. \"ijesztő\" résznél)."
+            ]
+          },
+          "tempo": {
+            "ertek": 0.65,
+            "javaslatok": [
+              "A tempó továbbra is megfelelő.",
+              "Rövid hatásszünetek beiktatása az idézetek után segítheti a feldolgozást."
+            ]
+          }
+        },
+        "kognitiv_tenyezok": {
+          "kognitiv_terheles": {
+            "ertek": 0.5,
+            "javaslatok": [
+              "Az idézetek és a hozzájuk kapcsolódó nevek, cégek követése igényel figyelmet.",
+              "Az idézetek kulcsszavainak kiemelése a dián csökkenthetné a terhelést."
+            ]
+          }
+        },
+        "public_speech": {
+          "testbeszed": {
+            "ertek": 0.7,
+            "javaslatok": [
+              "Aktívabb gesztikuláció, több mozgás.",
+              "A jegyzetek letétele és a kezek teljesebb használata."
+            ]
+          },
+          "verbalis_kommunikacio": {
+            "ertek": 0.85,
+            "javaslatok": [
+              "Világos és érthető beszéd.",
+              "Az idézetek pontos és gördülékeny felolvasása."
+            ]
+          },
+          "hitelesseg_es_onbizalom": {
+            "ertek": 0.75,
+            "javaslatok": [
+              "A források (előadók) megnevezése növeli a hitelességet.",
+              "Erősebb kapcsolat teremtése az idézetek és a saját mondanivaló között."
+            ]
+          },
+          "kozonsegkapcsolat": {
+            "ertek": 0.6,
+            "javaslatok": [
+              "A szemkontaktus még mindig lehetne gyakoribb.",
+              "A közönség felé fordulás, amikor nem idéz."
+            ]
+          },
+          "hangszin_es_intonacio": {
+            "ertek": 0.65,
+            "javaslatok": [
+              "Az intonáció javul, különösen az idézeteknél.",
+              "A hangszínnel való játék (pl. komolyság, lelkesedés) tovább mélyíthetné a mondanivalót."
+            ]
+          },
+          "struktura_es_tortenetmeseles": {
+            "ertek": 0.75,
+            "javaslatok": [
+              "Logikusan folytatódik az összefoglalás, témák szerint csoportosítva.",
+              "Egyértelműbb átvezetés a következő gondolathoz."
+            ]
+          }
+        }
+      },
+      {
+        "idopont": "1:30-2:00",
+        "pszichometria": {
+          "orom": {
+            "ertek": 0.35,
+            "javaslatok": [
+              "Az új téma (ügyfélbizalom) bevezetése és a paradoxon említése növelheti az érdeklődést.",
+              "A saját téma iránti lelkesedés erőteljesebb kimutatása."
+            ]
+          },
+          "stressz": {
+            "ertek": 0.1,
+            "javaslatok": [
+              "Az előadó magabiztosan tér rá a saját témájára.",
+              "Testbeszéd további lazítása."
+            ]
+          },
+          "unalom": {
+            "ertek": 0.1,
+            "javaslatok": [
+              "Az új nézőpont (ügyfélbizalom vs. adat=olaj) és a történelmi idézet felkelti a figyelmet.",
+              "A paradoxon kibontásának ígérete fenntartja az érdeklődést."
+            ]
+          },
+          "elkotelezettseg": {
+            "ertek": 0.85,
+            "javaslatok": [
+              "A saját téma bevezetése és a kontrasztosítás (adat vs. bizalom) növeli az elkötelezettséget.",
+              "A közönség bevonása a paradoxonról való gondolkodásba."
+            ]
+          }
+        },
+        "vizualis_stimulacio": {
+          "intenzitas": {
+            "ertek": 0.45,
+            "javaslatok": [
+              "A Woodrow Wilson idézet diára kerülése új vizuális elem.",
+              "Az idézet formázása (kiemelés, kép) hatásosabb lehetne."
+            ]
+          },
+          "mozgas": {
+            "ertek": 0.45,
+            "javaslatok": [
+              "Az előadó mozgása és gesztusai továbbra is jelen vannak.",
+              "A színpadi pozíció váltása a téma váltásakor."
+            ]
+          },
+          "kontraszt": {
+            "ertek": 0.55,
+            "javaslatok": [
+              "Az idézet diájának kontrasztja megfelelő.",
+              "A Wilson kép kontrasztja lehetne jobb."
+            ]
+          },
+          "dinamika": {
+            "ertek": 0.4,
+            "javaslatok": [
+              "A slide váltás növeli a dinamikát.",
+              "Az idézet fokozatos megjelenítése animációval."
+            ]
+          }
+        },
+        "hang_stimulacio": {
+          "hangero": {
+            "ertek": 0.7,
+            "javaslatok": [
+              "Hangerő konzisztens.",
+              "A mikrofon távolságának optimalizálása."
+            ]
+          },
+          "energia": {
+            "ertek": 0.65,
+            "javaslatok": [
+              "Az energia nő, ahogy az előadó a saját témájára tér.",
+              "A kulcsüzenet (",
+              "ügyfélbizalom",
+              "erőteljesebb hangsúlyozása."
+            ]
+          },
+          "hangmagassag": {
+            "ertek": 0.6,
+            "javaslatok": [
+              "Az intonáció változatosabbá válik a téma bevezetésével.",
+              "A paradoxon felvetésekor a hangmagasság játékosabb használata."
+            ]
+          },
+          "tempo": {
+            "ertek": 0.7,
+            "javaslatok": [
+              "A tempó kissé gyorsul a lelkesedés miatt.",
+              "Lassítás a fő üzenet megfogalmazásakor."
+            ]
+          }
+        },
+        "kognitiv_tenyezok": {
+          "kognitiv_terheles": {
+            "ertek": 0.6,
+            "javaslatok": [
+              "Az új koncepció (ügyfélbizalom) és a paradoxon bevezetése növeli a terhelést.",
+              "A fogalmak (pl.",
+              "új valuta",
+              "egyértelmű definiálása vagy vizualizálása."
+            ]
+          }
+        },
+        "public_speech": {
+          "testbeszed": {
+            "ertek": 0.7,
+            "javaslatok": [
+              "Az előadó gesztusai kifejezőbbek a saját témánál.",
+              "A színpad tudatosabb használata a gondolatmenet tagolására."
+            ]
+          },
+          "verbalis_kommunikacio": {
+            "ertek": 0.85,
+            "javaslatok": [
+              "Világos fogalmazás.",
+              "A",
+              "kicsit talán elcsépelt kifejezés",
+              "megjegyzés helyett egy erősebb átvezetés."
+            ]
+          },
+          "hitelesseg_es_onbizalom": {
+            "ertek": 0.8,
+            "javaslatok": [
+              "A saját téma határozott képviselete növeli a hitelességet.",
+              "A jegyzetek végleges elhagyása."
+            ]
+          },
+          "kozonsegkapcsolat": {
+            "ertek": 0.7,
+            "javaslatok": [
+              "Jobb szemkontaktus a saját téma bevezetésekor.",
+              "A közönség reakcióinak figyelése és esetleges reflektálás."
+            ]
+          },
+          "hangszin_es_intonacio": {
+            "ertek": 0.7,
+            "javaslatok": [
+              "Élénkebb, változatosabb hanghasználat.",
+              "A Wilson idézet felolvasásakor a hangnem igazítása a tartalomhoz."
+            ]
+          },
+          "struktura_es_tortenetmeseles": {
+            "ertek": 0.8,
+            "javaslatok": [
+              "Erős átmenet a bevezetőből a fő témába, kontraszt felállításával.",
+              "A paradoxon mint központi elem világosabb kiemelése a továbbiakban."
+            ]
+          }
+        }
+      }
+    ],
+    "osszesites": {
+      "atlagok": {
+        "pszichometria": {
+          "orom": 0.2875,
+          "stressz": 0.1125,
+          "unalom": 0.1375,
+          "elkotelezettseg": 0.775
+        },
+        "vizualis_stimulacio": {
+          "intenzitas": 0.4875,
+          "mozgas": 0.45,
+          "kontraszt": 0.5875,
+          "dinamika": 0.4375
+        },
+        "hang_stimulacio": {
+          "hangero": 0.7,
+          "energia": 0.625,
+          "hangmagassag": 0.5375,
+          "tempo": 0.65
+        },
+        "kognitiv_tenyezok": {
+          "kognitiv_terheles": 0.5125
+        },
+        "public_speech": {
+          "testbeszed": 0.66,
+          "verbalis_kommunikacio": 0.85,
+          "hitelesseg_es_onbizalom": 0.76,
+          "kozonsegkapcsolat": 0.66,
+          "hangszin_es_intonacio": 0.65,
+          "struktura_es_tortenetmeseles": 0.75
+        }
+      },
+      "fo_javaslatok": [
+        "Az előadás vizuális megjelenítésének dinamizálása (változatosabb diák, több mozgás, jobb kontraszt).",
+        "A jegyzetek/telefon használatának minimalizálása a testbeszéd és a közönségkapcsolat erősítése érdekében.",
+        "A hangszín és intonáció tudatosabb használata a kulcsüzenetek kiemelésére és a monotonitás elkerülésére.",
+        "Az előadás struktúrájának feszesebbé tétele, az összefoglaló rész rövidítése vagy interaktívabbá tétele.",
+        "Az új, saját koncepciók (pl. ügyfélbizalom mint valuta, paradoxon) erőteljesebb vizuális vagy retorikai kiemelése."
+      ]
+    }
+  }
+}

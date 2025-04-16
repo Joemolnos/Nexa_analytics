@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Video - Nexa Analytics</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('index') }}">
+                <span class="text-primary fw-bold">Nexa</span><span class="fw-light"> Analytics</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{{ url_for('upload_page') }}">Upload</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-3">
+                    <a href="{{ url_for('logout') }}" class="btn btn-outline-primary">
+                        <i class="bi bi-box-arrow-right me-1"></i> Sign Out
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                            <div class="alert alert-{{ category }} alert-dismissible fade show mb-4" role="alert">
+                                {{ message }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+                
+                <div class="card border-0 shadow-lg overflow-hidden">
+                    <div class="card-header bg-primary text-white p-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h2 class="m-0 fs-3">
+                                <i class="bi bi-cloud-arrow-up me-2"></i> Upload Video for Analysis
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="card-body p-4 p-lg-5">
+                        <div class="row mb-4">
+                            <div class="col-lg-7 mb-4 mb-lg-0">
+                                <h4 class="mb-3">How It Works</h4>
+                                <div class="d-flex mb-3">
+                                    <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center flex-shrink-0 me-3" style="width: 36px; height: 36px;">
+                                        <span>1</span>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">Upload Your Video</h6>
+                                        <p class="text-muted mb-0">Drag and drop or select a video file to upload.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center flex-shrink-0 me-3" style="width: 36px; height: 36px;">
+                                        <span>2</span>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">AI Analysis</h6>
+                                        <p class="text-muted mb-0">Our AI engine will analyze your video content.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center flex-shrink-0 me-3" style="width: 36px; height: 36px;">
+                                        <span>3</span>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">View Insights</h6>
+                                        <p class="text-muted mb-0">Get detailed analytics and recommendations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="card h-100 border-0 bg-light">
+                                    <div class="card-body p-4">
+                                        <h5 class="mb-3">Supported Formats</h5>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> MP4 (H.264 codec)</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> MOV (QuickTime)</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> AVI (Standard)</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> WMV (Windows Media)</li>
+                                            <li><i class="bi bi-info-circle-fill text-primary me-2"></i> Max file size: 100MB</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="upload-container mb-4">
+                            <div class="upload-area" id="upload-area">
+                                <div class="upload-prompt text-center p-5">
+                                    <i class="bi bi-cloud-arrow-up fs-1 text-primary mb-3"></i>
+                                    <h5 class="mb-3">Drag & Drop Your Video Here</h5>
+                                    <p class="text-muted mb-4">or</p>
+                                    <input type="file" id="video-upload" accept="video/*" class="d-none">
+                                    <button id="browse-button" class="btn btn-primary">
+                                        <i class="bi bi-folder me-2"></i> Browse Files
+                                    </button>
+                                </div>
+                                <div class="selected-file d-none">
+                                    <div class="card border-0 bg-light p-3 mb-3">
+                                        <div class="d-flex align-items-center">
+                                            <i class="bi bi-file-earmark-play fs-1 text-primary me-3"></i>
+                                            <div>
+                                                <h6 class="mb-1" id="file-name"></h6>
+                                                <p class="text-muted mb-0 small" id="file-size"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button id="upload-button" class="btn btn-primary me-2">
+                                            <i class="bi bi-cloud-arrow-up me-2"></i> Upload & Analyze
+                                        </button>
+                                        <button id="cancel-button" class="btn btn-outline-secondary">
+                                            <i class="bi bi-x me-2"></i> Cancel
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="upload-progress" class="progress d-none mb-4" style="height: 10px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%"></div>
+                        </div>
+                        
+                        <div id="analysis-status" class="alert alert-info d-none">
+                            <div class="d-flex align-items-center">
+                                <div class="spinner-border spinner-border-sm me-3" role="status"></div>
+                                <div>
+                                    <h6 class="mb-1">Analysis in Progress</h6>
+                                    <p class="mb-0 small">This may take a few minutes depending on the video length and complexity.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="error-message" class="alert alert-danger d-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="py-4 bg-light mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">&copy; 2025 Nexa Analytics. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-decoration-none text-muted me-3">Privacy Policy</a>
+                    <a href="#" class="text-decoration-none text-muted me-3">Terms of Service</a>
+                    <a href="#" class="text-decoration-none text-muted">Help</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const uploadArea = document.getElementById('upload-area');
+            const videoUpload = document.getElementById('video-upload');
+            const browseButton = document.getElementById('browse-button');
+            const uploadButton = document.getElementById('upload-button');
+            const cancelButton = document.getElementById('cancel-button');
+            const fileName = document.getElementById('file-name');
+            const fileSize = document.getElementById('file-size');
+            const uploadPrompt = document.querySelector('.upload-prompt');
+            const selectedFile = document.querySelector('.selected-file');
+            const uploadProgress = document.getElementById('upload-progress');
+            const progressBar = uploadProgress.querySelector('.progress-bar');
+            const analysisStatus = document.getElementById('analysis-status');
+            const errorMessage = document.getElementById('error-message');
+            
+            // Format file size
+            function formatFileSize(bytes) {
+                if (bytes === 0) return '0 Bytes';
+                const k = 1024;
+                const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+                const i = Math.floor(Math.log(bytes) / Math.log(k));
+                return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+            }
+            
+            // Browse button click
+            browseButton.addEventListener('click', function() {
+                videoUpload.click();
+            });
+            
+            // File selection
+            videoUpload.addEventListener('change', function() {
+                if (this.files.length > 0) {
+                    const file = this.files[0];
+                    fileName.textContent = file.name;
+                    fileSize.textContent = formatFileSize(file.size);
+                    uploadPrompt.classList.add('d-none');
+                    selectedFile.classList.remove('d-none');
+                }
+            });
+            
+            // Cancel button click
+            cancelButton.addEventListener('click', function() {
+                videoUpload.value = '';
+                uploadPrompt.classList.remove('d-none');
+                selectedFile.classList.add('d-none');
+                uploadProgress.classList.add('d-none');
+                progressBar.style.width = '0%';
+                analysisStatus.classList.add('d-none');
+                errorMessage.classList.add('d-none');
+            });
+            
+            // Upload button click
+            uploadButton.addEventListener('click', function() {
+                if (videoUpload.files.length === 0) {
+                    return;
+                }
+                
+                const file = videoUpload.files[0];
+                const formData = new FormData();
+                formData.append('video', file);
+                
+                // Prepare upload
+                uploadProgress.classList.remove('d-none');
+                uploadButton.disabled = true;
+                cancelButton.disabled = true;
+                errorMessage.classList.add('d-none');
+                
+                // AJAX request
+                const xhr = new XMLHttpRequest();
+                
+                // Track upload progress
+                xhr.upload.addEventListener('progress', function(e) {
+                    if (e.lengthComputable) {
+                        const percentComplete = (e.loaded / e.total) * 100;
+                        progressBar.style.width = percentComplete + '%';
+                    }
+                });
+                
+                // Upload complete
+                xhr.addEventListener('load', function() {
+                    if (xhr.status >= 200 && xhr.status < 300) {
+                        // Successful upload
+                        progressBar.style.width = '100%';
+                        uploadProgress.classList.add('d-none');
+                        analysisStatus.classList.remove('d-none');
+                        
+                        try {
+                            const response = JSON.parse(xhr.responseText);
+                            
+                            if (response.success) {
+                                // Successful analysis, redirect to dashboard
+                                window.location.href = '/dashboard/' + response.result_file;
+                            } else {
+                                // Error during analysis
+                                analysisStatus.classList.add('d-none');
+                                errorMessage.innerHTML = `<h6 class="mb-1">Analysis Error</h6><p class="mb-0">${response.error || 'An error occurred during analysis.'}</p>`;
+                                errorMessage.classList.remove('d-none');
+                                uploadButton.disabled = false;
+                                cancelButton.disabled = false;
+                            }
+                        } catch (e) {
+                            // JSON parse error
+                            analysisStatus.classList.add('d-none');
+                            errorMessage.innerHTML = `<h6 class="mb-1">Response Error</h6><p class="mb-0">An error occurred while processing the server response.</p>`;
+                            errorMessage.classList.remove('d-none');
+                            uploadButton.disabled = false;
+                            cancelButton.disabled = false;
+                        }
+                    } else if (xhr.status === 503) {
+                        // Server overload
+                        try {
+                            const response = JSON.parse(xhr.responseText);
+                            analysisStatus.classList.add('d-none');
+                            errorMessage.innerHTML = `<h6 class="mb-1">Server Busy</h6><p class="mb-0">${response.error || 'The server is currently overloaded. Please try again later.'}</p>`;
+                            errorMessage.classList.remove('d-none');
+                            uploadButton.disabled = false;
+                            cancelButton.disabled = false;
+                        } catch (e) {
+                            analysisStatus.classList.add('d-none');
+                            errorMessage.innerHTML = `<h6 class="mb-1">Server Busy</h6><p class="mb-0">The server is currently overloaded. Please try again later.</p>`;
+                            errorMessage.classList.remove('d-none');
+                            uploadButton.disabled = false;
+                            cancelButton.disabled = false;
+                        }
+                    } else {
+                        // Other error
+                        analysisStatus.classList.add('d-none');
+                        errorMessage.innerHTML = `<h6 class="mb-1">Upload Error</h6><p class="mb-0">Error code: ${xhr.status}</p>`;
+                        errorMessage.classList.remove('d-none');
+                        uploadButton.disabled = false;
+                        cancelButton.disabled = false;
+                    }
+                });
+                
+                // Upload error
+                xhr.addEventListener('error', function() {
+                    analysisStatus.classList.add('d-none');
+                    errorMessage.innerHTML = `<h6 class="mb-1">Network Error</h6><p class="mb-0">A network error occurred during upload. Please check your connection and try again.</p>`;
+                    errorMessage.classList.remove('d-none');
+                    uploadButton.disabled = false;
+                    cancelButton.disabled = false;
+                });
+                
+                // Send request
+                xhr.open('POST', '/upload-file', true);
+                xhr.send(formData);
+            });
+            
+            // Prevent default drag behaviors
+            function preventDefaults(e) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+            
+            ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+                uploadArea.addEventListener(eventName, preventDefaults, false);
+            });
+            
+            // Highlight drop area when item is dragged over it
+            function highlight() {
+                uploadArea.classList.add('highlight');
+            }
+            
+            function unhighlight() {
+                uploadArea.classList.remove('highlight');
+            }
+            
+            ['dragenter', 'dragover'].forEach(eventName => {
+                uploadArea.addEventListener(eventName, highlight, false);
+            });
+            
+            ['dragleave', 'drop'].forEach(eventName => {
+                uploadArea.addEventListener(eventName, unhighlight, false);
+            });
+            
+            // Handle dropped files
+            function handleDrop(e) {
+                const dt = e.dataTransfer;
+                const files = dt.files;
+                
+                if (files.length > 0 && files[0].type.startsWith('video/')) {
+                    videoUpload.files = files;
+                    const file = files[0];
+                    fileName.textContent = file.name;
+                    fileSize.textContent = formatFileSize(file.size);
+                    uploadPrompt.classList.add('d-none');
+                    selectedFile.classList.remove('d-none');
+                }
+            }
+            
+            uploadArea.addEventListener('drop', handleDrop, false);
+        });
+    </script>
+</body>
+</html>
